@@ -18,4 +18,6 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_KEY }}
-          script: bash ${{ vars.APP_DIR }}/entrypoint.sh
+          script: |
+          cd ${{ vars.APP_DIR }}
+          bash entrypoint.sh

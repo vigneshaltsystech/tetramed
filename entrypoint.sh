@@ -1,8 +1,5 @@
 #!/bin/bash
 
-echo "Jump to Tetramed app directory"
-cd /home/ec2-user/tetramed
-
 echo "Pull changes from GitHub"
 git pull
 
