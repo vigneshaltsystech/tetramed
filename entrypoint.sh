@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "Updating nvm path"
+export NVM_DIR=~/.nvm
+source ~/.nvm/nvm.sh  
+
 echo "Pull changes from GitHub"
 git pull
 
