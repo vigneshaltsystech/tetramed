@@ -82,6 +82,7 @@ async function insertOrder(order) {
 
 async function searchItems({ search_string }) {
     const query = `SELECT * FROM item_details_tbl WHERE itemname LIKE '%${search_string}%';`;
+    
 
     const [rows] = await pool.query(query);
 
